@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hanna & Draga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="media/heart.png" type="image/x-icon">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="hero">
+    <div class="stars" aria-hidden="true"></div>
+    <div class="container">
+      <h1 class="title">Hanna & Draga</h1>
+      <p class="subtitle">Essa é a nossa história — e talvez o começo de algo ainda maior.</p>
+      <a href="pages/page-one.html" class="btn">Começar ✨</a>
+    </div>
+  </div>
+
+  <footer>
+    Feito com amor por kaka — hoje e sempre</a>.
+  </footer>
+    <script>
+    for(let i=0;i<30;i++){
+  const heart = document.createElement('img');
+  heart.src='media/heart.png';
+  heart.classList.add('heart');
+  heart.style.position = 'fixed';
+  heart.style.bottom = '0'; 
+  heart.style.left=Math.random()*100+'vw';
+  heart.style.animationDuration=(5 + Math.random()*5)+'s';
+  heart.style.transform=`scale(${0.5 + Math.random()*0.8})`;
+  heart.style.animationDelay=Math.random()*5+'s';
+  document.body.appendChild(heart);
+}
+  </script>
+</body>
+</html>
+</div>

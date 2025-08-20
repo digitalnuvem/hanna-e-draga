@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanna & Draga</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../index.css">
+  <link rel="icon" href="../media/heart.png" type="image/x-icon">
+</head>
+<body>
+    <main class="container" id="historia">
+     <section class="card reveal">
+      <h2>Por que eu te amo?</h2>
+      <div class="reasons">
+        <div class="reason">Porque você é meu lar.</div>
+        <div class="reason">Porque sua voz me acalma.</div>
+        <div class="reason">Porque com você tudo é mais leve.</div>
+        <div class="reason">Porque você me faz querer ser melhor.</div>
+        <div class="reason">Porque eu não imagino o mundo sem você.</div>
+        <div class="reason">Porque te amar é a minha parte favorita do dia.</div>
+        <div class="reason">Porque até as coisas simples ficam especiais com você.</div>
+        <div class="reason">Porque cada momento ao seu lado vira uma memória especial</div>
+        <div class="reason">Porque com você eu aprendi o que é o amor de verdade.</div>
+      </div>
+      <a href="page-for.html" class="btn">Próximo 👉</a>
+    </section>
+    </main>
+        <script>
+    for(let i=0;i<30;i++){
+  const heart = document.createElement('img');
+  heart.src='../media/heart.png';
+  heart.classList.add('heart');
+  heart.style.position = 'fixed';
+  heart.style.bottom = '0'; 
+  heart.style.left=Math.random()*100+'vw';
+  heart.style.animationDuration=(5 + Math.random()*5)+'s';
+  heart.style.transform=`scale(${0.5 + Math.random()*0.8})`;
+  heart.style.animationDelay=Math.random()*5+'s';
+  document.body.appendChild(heart);
+}
+  </script>
+</body>
+</html>

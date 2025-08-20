@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanna & Draga</title>
+  <link rel="icon" href="../media/heart.png" type="image/x-icon">
+  <meta name="description" content="Um site-surpresa para o pedido de casamento de Hanna & Draga." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+  <main class="container" id="historia">
+    <section class="card grid">
+      <div>
+        <h2>Como tudo começou</h2>
+        <p>Você lembra do dia em que tudo começou? Talvez a gente não soubesse na hora, mas ali nasceu algo raro. Uma conexão que cresceu entre conversas e sorrisos. Foi nesse dia que o universo decidiu brincar de destino com a gente.</p>
+        <p>De lá pra cá, cada detalhe — até os caóticos — virou parte do que somos. E eu não trocaria nada.</p>
+      </div>
+      <div>
+        <div class="polaroids">
+          <figure style="--r:-2">
+            <img alt="Foto 1" src="../media/image-1.jpg"/>
+            <figcaption>Nossa primeira foto.</figcaption>
+          </figure>
+          <figure style="--r:2.5">
+            <img src="../media/image-2.jpg" alt="">
+            <figcaption>Você é meu lugar favorito.</figcaption>
+          </figure>
+          <figure style="--r:-1.5">
+            <img alt="Foto 3" src="../media/image-3.jpg"/>
+            <figcaption>Amar você é o meu maior presente.</figcaption>
+          </figure>
+          <figure style="--r:1.8">
+            <img alt="Foto 4" src="../media/image-4.jpg"/>
+            <figcaption>Você é meu “sempre” em um mundo cheio de “talvez”.</figcaption>
+          </figure>
+        </div>
+    </div>
+    <a href="page-two.html" class="btn">Próximo 👉</a>
+    </section>
+  </main>
+    <script>
+    for(let i=0;i<30;i++){
+  const heart = document.createElement('img');
+  heart.src='../media/heart.png';
+  heart.classList.add('heart');
+  heart.style.position = 'fixed';
+  heart.style.bottom = '0'; 
+  heart.style.left=Math.random()*100+'vw';
+  heart.style.animationDuration=(5 + Math.random()*5)+'s';
+  heart.style.transform=`scale(${0.5 + Math.random()*0.8})`;
+  heart.style.animationDelay=Math.random()*5+'s';
+  document.body.appendChild(heart);
+}
+  </script>
+</body>
+</html>

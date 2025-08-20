@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanna & Draga</title>
+  <link rel="icon" href="../media/heart.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+    <main class="container" id="historia">
+      <section class="card reveal">
+      <h2>Nossos momentos</h2>
+      <p>A gente viveu tanta coisa linda — dos simples aos épicos. Cada risada, cada abraço, cada madrugada falando besteira virou capítulo de uma história que eu quero ler pra sempre.</p>
+      <div class="polaroids">
+        <figure style="--r:1.2">
+          <img alt="Viagem juntas" src="../media/image-5.jpg"/>
+          <figcaption>Até nas pequenas coisas você me faz feliz.</figcaption>
+        </figure>
+        <figure style="--r:-2.6">
+          <img alt="Pôr do sol" src="../media/image-6.jpg"/>
+          <figcaption>Cada detalhe seu é único e insubstituível.</figcaption>
+        </figure>
+        <figure style="--r:2.2">
+          <img alt="Risadas" src="../media/image-7.jpg"/>
+          <figcaption>Você é o detalhe mais bonito da minha vida.</figcaption>
+        </figure>
+        <figure style="--r:-1.8">
+          <img alt="Nosso lugar" src="../media/image-8.jpg"/>
+          <figcaption>Você é o motivo dos meus planos para o futuro.</figcaption>
+      </div>
+      <a href="page-three.html" class="btn">Próximo 👉</a>
+    </section>
+    </main>
+        <script>
+    for(let i=0;i<30;i++){
+  const heart = document.createElement('img');
+  heart.src='../media/heart.png';
+  heart.classList.add('heart');
+  heart.style.position = 'fixed';
+  heart.style.bottom = '0'; 
+  heart.style.left=Math.random()*100+'vw';
+  heart.style.animationDuration=(5 + Math.random()*5)+'s';
+  heart.style.transform=`scale(${0.5 + Math.random()*0.8})`;
+  heart.style.animationDelay=Math.random()*5+'s';
+  document.body.appendChild(heart);
+}
+  </script>
+</body>
+</html>
